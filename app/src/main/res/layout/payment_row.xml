@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal" android:layout_width="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_margin="5dp"
+app:cardCornerRadius="5dp"
+android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+<LinearLayout
+    android:layout_margin="@dimen/top_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_toLeftOf="@+id/llVehicleInfo"
+            android:layout_toStartOf="@+id/llVehicleInfo"
+            android:id="@+id/llorderinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical"
+                >
+                <TextView
+                    app:font="Light"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderid"
+                    android:textColor="@color/gray_off"
+                    />
+
+                <TextView
+                    android:lines="1"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="785412"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical"
+                >
+                <TextView
+                    app:font="Light"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service"
+                    android:textColor="@color/gray_off"
+                    />
+
+                <TextView
+                    android:lines="1"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Removal"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/smargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical"
+                >
+                <TextView
+                    app:font="Light"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scheduled"
+                    android:textColor="@color/gray_off"
+                    />
+
+                <TextView
+                    android:lines="1"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2:30,Fri June 16"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llVehicleInfo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/van_icn"
+                />
+
+            <TextView
+                android:lines="1"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Van"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/top_margin"
+
+        android:background="@drawable/border_outline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/totalcredits"
+            android:padding="@dimen/padding"
+            app:font="Light"
+            style="@style/FastVan.Widget.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalcredit"
+
+            />
+        <TextView
+            android:lines="1"
+            android:gravity="right"
+
+            android:layout_toRightOf="@+id/totalcredits"
+            android:layout_toEndOf="@+id/totalcredits"
+            android:padding="@dimen/padding"
+            app:font="SemiBold"
+            style="@style/FastVan.Widget.TextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/totalcredit"
+
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/top_margin"
+
+        android:textColor="@color/appColor"
+
+        app:font="Light"
+        android:text="@string/viewdetails"
+        style="@style/FastVan.Widget.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</android.support.v7.widget.CardView>

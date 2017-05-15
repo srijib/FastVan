@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false"
+    >
+    <!---->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dialog_background_color"
+        android:splitMotionEvents="false"
+       >
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:splitMotionEvents="false">
+
+            <TextView
+                android:id="@+id/textHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/verificationCode"
+                android:textColor="@color/dilaog_text_color"
+                android:textSize="@dimen/dialog_header_textsize"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/divided_color"
+                android:visibility="visible"></View>
+
+
+            <EditText
+                style="@style/FastVan.Widget.EditText"
+                android:maxLength="6"
+                android:inputType="number"
+                android:id="@+id/textVarificatonCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:maxHeight="400dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:imeOptions="actionDone"
+                  />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@color/white_off"></View>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <Button
+                    android:enabled="false"
+                    style="@style/FastVan.Widget.Button"
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:singleLine="true"
+                    android:text="@string/confirm"
+                    android:textColor="@drawable/appcolor_selector"
+                   />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white_off">
+
+                </View>
+
+                <Button
+
+                    style="@style/FastVan.Widget.Button"
+                    android:id="@+id/btnResendOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:singleLine="true"
+                    android:text="@string/resend"
+                    android:textColor="@drawable/textcolor_selector"
+                     />
+            </LinearLayout>
+
+
+            <Button
+                android:visibility="gone"
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:background="@drawable/transparent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="OK"
+                android:textColor="@drawable/dialog_text_color_selector"
+                android:textSize="@dimen/dialog_btn_textsize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
+    </ScrollView>

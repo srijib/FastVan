@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbarwithtitleNlogo" type="id"/>
+    <item name="screenTitle" type="id"/>
+    <item name="signup" type="id"/>
+    <item name="signupwithemail" type="id"/>
+    <item name="signupwithfb" type="id"/>
+    <item name="signin" type="id"/>
+    <item name="submit" type="id"/>
+<!--registration-->
+    <item name="firstname" type="id"/>
+    <item name="lastname" type="id"/>
+    <item name="emailaddress" type="id"/>
+    <item name="mobilenumber" type="id"/>
+    <item name="companyname" type="id"/>
+    <item name="servicetype" type="id"/>
+    <item name="trucktype" type="id"/>
+    <item name="vehicaltype" type="id"/>
+    <item name="vehicalnumber" type="id"/>
+    <item name="password" type="id"/>
+    <item name="confirmpassword" type="id"/>
+    <item name="backbutton" type="id"/>
+    <item name="notificationbutton" type="id"/>
+    <item name="parentBgImageView" type="id"/>
+    <item name="deliverylocation" type="id"/>
+    <item name="deliveryAddress" type="id"/>
+    <item name="locationicon" type="id"/>
+    <item name="layoutAddress" type="id"/>
+    <item name="networkImage" type="id"/>
+    <item name="layoutParcel" type="id"/>
+    <item name="llAcceptReject" type="id"/>
+    <item name="scheduledtime" type="id"/>
+    <item name="additionalinfo" type="id"/>
+    <item name="pickuplocation" type="id"/>
+    <item name="typeOfGood" type="id"/>
+    <item name="quantity" type="id"/>
+    <item name="orderID" type="id"/>
+    <item name="accept" type="id"/>
+    <item name="reject" type="id"/>
+    <item name="parentLayout" type="id"/>
+    <item name="customerName" type="id"/>
+    <item name="imgAvatar" type="id"/>
+    <item name="noRecord" type="id"/>
+    <item name="makeCall" type="id"/>
+    <item name="orderDetail" type="id"/>
+    <item name="address" type="id"/>
+</resources>

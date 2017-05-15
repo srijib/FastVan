@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="button_height">49dp</dimen>
+    <dimen name="button_large_height">48dp</dimen>
+    <dimen name="button_textSize">17sp</dimen>
+    <dimen name="edittext_textSize">17sp</dimen>
+    <dimen name="textview_textSize">14sp</dimen>
+    <dimen name="small_textSize">12sp</dimen>
+    <dimen name="button_stroke">1dp</dimen>
+    <dimen name="button_padding">5dp</dimen>
+    <dimen name="toolbar_title_textsize">15sp</dimen>
+    <dimen name="textSize">15sp</dimen>
+    <dimen name="xtextSize">17sp</dimen>
+    <dimen name="xAvtarSize">95dp</dimen>
+
+
+    <dimen name="button_vsmargin">1dp</dimen>
+    <dimen name="top_margin">19dp</dimen>
+    <dimen name="bottom_margin">19dp</dimen>
+    <dimen name="left_margin">19dp</dimen>
+    <dimen name="right_margin">19dp</dimen>
+    <dimen name="edittextheight">49dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <!--general-->
+    <dimen name="padding">19dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="smargin">5dp</dimen>
+    <dimen name="spadding">5dp</dimen>
+
+    <dimen name="top_bar_size">56dp</dimen>
+    <dimen name="status_bar_size">0dp</dimen>
+    <dimen name="edittext_size">17sp</dimen>
+    <dimen name="cross_text_size">18sp</dimen>
+    <dimen name="btn_text_size">20sp</dimen>
+    <dimen name="dialog_textview_textsize">16sp</dimen>
+    <dimen name="dialog_header_textsize">19sp</dimen>
+    <dimen name="dialog_btn_textsize">19sp</dimen>
+    <dimen name="strokpadding">1dp</dimen>
+    <dimen name="stroklr">1px</dimen>
+    <dimen name="leftbuttonsize">30dp</dimen>
+
+</resources>

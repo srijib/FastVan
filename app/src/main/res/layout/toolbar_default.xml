@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/toolbarwithtitleNlogo"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="@dimen/toolbar_height"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginStart="@dimen/left_margin"
+            android:id="@id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/menu_nav_selector" />
+
+        <TextView
+            android:id="@id/screenTitle"
+            style="@style/FastVan.Widget.ToolbarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="title"
+            app:font="Light" />
+
+        <LinearLayout
+
+
+            android:id="@+id/llNotifications"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/right_margin"
+            android:layout_marginRight="@dimen/right_margin"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:id="@+id/textviewNotificationCount"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/notificationborder_selector"
+                android:clickable="false"
+                android:gravity="center"
+
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="0"
+                android:textColor="@drawable/white_color_selector"
+                app:font="Light"
+
+                />
+
+            <ImageButton
+                android:id="@id/notificationbutton"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/smargin"
+
+                android:layout_marginStart="@dimen/smargin"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:src="@drawable/notification_nav_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

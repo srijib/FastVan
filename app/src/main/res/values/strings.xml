@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">FastVan Driver</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--<string name="gcm_defaultSenderId">611757173319</string>-->
+    <!--<string name="google_api_key">AIzaSyBEbZmhTNI3wlZqaYCoOMb6qUXfustHncs</string>-->
+
+    <string name="google_api_key">AIzaSyCDi7hbbS-sDOq3kUyZj_G5ISzZfIy6uCo</string>
+    <string name="google_api_key_server">AIzaSyCM8pBpLvpkcHOqWcXjJut02iWaKPI30_w</string>
+    <string name="gcm_defaultSenderId">928561074685</string>
+
+    <!--fastvan buttons labels-->
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="signupwithfacebook">SIGN UP WITH FACEBOOK</string>
+    <string name="signupwithemail">SIGN UP WITH EMAIL</string>
+    <string name="alreadyhaveaccount">Already have an account?</string>
+    <string name="business">Business User</string>
+    <string name="individual">Individual</string>
+    <string name="firstname">*First Name</string>
+    <string name="lastname">*Last Name</string>
+    <string name="emailaddress">*Email Address</string>
+    <string name="mobilenumber">*Mobile Number</string>
+    <string name="address">*Address</string>
+    <string name="companyname">*Company Name</string>
+    <string name="servicetype">*Service Type</string>
+    <string name="trucktype">*Truck Type</string>
+    <string name="vehicaltype">*Vehicle Type</string>
+    <string name="vehicalno">*Vehicle Registration Number</string>
+    <string name="referralcode">*Referral Code</string>
+    <string name="password">*Password</string>
+    <string name="confirmpassword">*Confirm Password</string>
+    <string name="forgetpassword">Forgot Password?</string>
+    <string name="agree">I agree to Terms of Service, Privacy policy &amp; EULA.</string>
+    <string name="resetingpassword">Enter your mobile number to get instructions for resetting password.</string>
+    <string name="submit">Submit</string>
+    <string name="changepassword">Change Password</string>
+    <string name="verificationCode">Enter Your Verification Code</string>
+    <string name="selectservice">Select Your Services</string>
+    <string name="selecttrucktype">Select Truck Type</string>
+    <string name="selectcompany">Select Your Company</string>
+    <string name="servicehint">Select single or multiple service options.</string>
+    <string name="vehiclehint">Select upto 2 vehicle options according to selected services.</string>
+    <string name="truckhint">Only for trucks</string>
+    <string name="selectvehicle">Select Your Vehicle</string>
+    <string name="courier">Courier</string>
+    <string name="removal">Freight</string>
+    <string name="accept">Accept</string>
+
+    <string name="flatDeck">Flat Deck</string>
+    <string name="dropSide">Drop Side</string>
+    <string name="curtainSide">Curtain Side</string>
+    <string name="pantech">Pantech</string>
+    <string name="delivery">Delivery</string>
+    <string name="allservices">All Services</string>
+    <string name="save">Save</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="resend">Resend OTP</string>
+    <string name="bike">Bike</string>
+    <string name="van">Van</string>
+    <string name="oneton">1 Ton Truck</string>
+    <string name="twoton">2 Ton Truck</string>
+    <string name="fourton">4 Ton Truck</string>
+    <string name="eightton">8 Ton Truck</string>
+    <string name="twelveton">12 Ton Truck</string>
+    <string name="thirtytwoton">32 Ton Truck</string>
+    <string name="national">National</string>
+    <string name="international">International</string>
+    <!--validation error  text-->
+    <string name="firstnamerequired">First Name Required.</string>
+    <string name="lastnamerequired">Last Name Required.</string>
+    <string name="emailrequired">Valid Email Address Required.</string>
+    <string name="phonerequired">Valid Phone Number Required.</string>
+    <string name="oldpasswordrequired">Old Password Required.</string>
+    <string name="companynamerequired">Company Name Required.</string>
+    <string name="servicetyperequired">Service Type Required.</string>
+    <string name="vehicaltyperequired">Vehicle Type Required.</string>
+    <string name="trucktyperequired">Truck Type Required.</string>
+    <string name="vehicalnumberrequired">Valid Vehicle Number Required.</string>
+    <string name="passwordrequired">Password Required.</string>
+    <string name="confirmpasswordrequired">Confirm Password Required.</string>
+    <string name="passwordlenghtrequired">Password must be at least 6 characters long.</string>
+    <string name="confirmpasswordnotmatchedrequired">Confirm Password not matched</string>
+    <string name="passwordnotmatchedrequired">Password Not Matched Required.</string>
+    <string name="verificationRequired">Please add valid Verification code.</string>
+    <string name="interneterror">No internet connection. Please try again later.</string>
+    <string name="clearnotifications">Clear Notification(s)</string>
+
+    <string name="deliverylocation">Delivery Location</string>
+    <string name="viewdetails">View Details</string>
+    <string name="parcel">Parcel:</string>
+    <string name="loremipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="service">Service:</string>
+    <string name="scheduled">Scheduled:</string>
+    <string name="totalcredit">Total Credits</string>
+    <string name="additional">Additional:</string>
+    <string name="orderid">Order ID:</string>
+    <string name="edtimatedfare">Estimated Fare:</string>
+    <string name="quotedfare">Quoted Fare</string>
+    <string name="pickuplocation">Pickup Location</string>
+    <string name="dropofflocation">Drop Off Location</string>
+    <string name="reject">Reject</string>
+    <string name="pickuped">Picked up</string>
+    <string name="delivering">In Transit</string>
+    <string name="delivered">Delivered</string>
+    <string name="arrived">Arrived</string>
+    <string name="pickup">Pickup</string>
+    <string name="norecord">No Record. Please try again later.</string>
+
+    <string name="from">From</string>
+    <string name="addrss">Address</string>
+    <string name="selectedservice">Selected Service</string>
+    <string name="servicedetails">Service Details</string>
+    <string name="selectedvehicle">Selected Vehicle</string>
+    <string name="dimension">Dimension: lenght | width | height </string>
+    <string name="weight">Weight</string>
+    <string name="estimate">Estimate</string>
+    <string name="oldpassword">*Old Password</string>
+    <string name="newpassword">*New Password</string>
+    <string name="dateformat">h:mm a, EEE MMMM dd</string>
+
+    <!-- getString(String, Object...) does not support HTML tags directly, they need to be encoded first.
+      Original string: <b>%1$s</b><br/><i>Place Id: %2$s</i><br/>Address: %3$s<br/>Phone: %4$s<br/>Website: %5$s-->
+    <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
+    <string name="autocomplete_hint">Search for a place</string>
+
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayoutD"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/strokegradient"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@id/deliverylocation"
+            style="@style/FastVan.Widget.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginStart="@dimen/left_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/deliverylocation"
+            app:font="SemiBold" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@id/layoutAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deliverylocation">
+
+            <ImageView
+                android:id="@id/locationicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/left_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginRight="@dimen/left_margin"
+
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginTop="@dimen/left_margin"
+                android:src="@drawable/location_icn" />
+
+            <TextView
+                android:id="@id/deliveryAddress"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_toEndOf="@id/locationicon"
+                android:layout_toLeftOf="@+id/viewDetails"
+                android:layout_toRightOf="@id/locationicon"
+                android:layout_toStartOf="@+id/viewDetails"
+                android:text="@string/deliverylocation"
+                app:font="Light" />
+
+            <TextView
+
+                android:id="@+id/viewDetails"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginEnd="@dimen/right_margin"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="@string/viewdetails"
+                android:textColor="@drawable/appcolor_selector"
+                app:font="Light" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+
+            android:id="@id/networkImage"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+
+            android:background="@color/gray_off"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+
+            android:layout_below="@id/networkImage"
+            android:id="@id/layoutParcel"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textParcel"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="@dimen/smargin"
+
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginRight="@dimen/smargin"
+                    android:layout_marginStart="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/smargin"
+                    android:text="@string/parcel"
+                    android:textColor="@color/gray_off"
+                    app:font="Light" />
+
+                <TextView
+                    android:id="@+id/typeOfGood"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginTop="@dimen/smargin"
+                    android:layout_toEndOf="@id/textParcel"
+                    android:layout_toRightOf="@id/textParcel"
+                    android:text="Bed" />
+
+                <TextView
+
+                    android:id="@id/quantity"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginEnd="@dimen/right_margin"
+                    android:layout_marginRight="@dimen/right_margin"
+                    android:layout_marginTop="@dimen/smargin"
+                    android:text="01" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/parcelDescription"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+
+                android:layout_alignParentTop="true"
+
+
+                android:layout_marginEnd="@dimen/right_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginBottom="@dimen/smargin"
+                android:maxLines="2"
+                android:text="@string/loremipsum"
+                app:font="Light" />
+
+            <Button
+                android:id="@+id/status"
+                style="@style/FastVan.Widget.Button"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/smargin"
+
+                android:text="Arrived"
+                android:visibility="gone"
+                app:font="Light" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

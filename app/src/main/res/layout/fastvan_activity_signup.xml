@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+
+    >
+    <include layout="@layout/toolbar_with_title"></include>
+    <ImageView
+        android:id="@id/parentLayout"
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        />
+<LinearLayout
+    android:padding="@dimen/padding"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatButton
+android:layout_margin="@dimen/margin"
+        style="@style/FastVan.Widget.Button"
+android:id="@id/signupwithfb"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_large_height"
+        android:text="@string/signupwithfacebook"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@id/signupwithemail"
+        android:layout_margin="@dimen/margin"
+        style="@style/FastVan.Widget.Button"
+
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_large_height"
+        android:text="@string/signupwithemail"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_margin="@dimen/margin"
+        style="@style/FastVan.Widget.TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/alreadyhaveaccount"
+        />
+
+</LinearLayout>
+</RelativeLayout>

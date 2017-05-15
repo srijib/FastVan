@@ -1,0 +1,118 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'maven'
+//apply plugin: 'signing'
+
+//version = "1.5.2"
+//group = "com.kbeanie"
+
+//configurations {
+//    archives {
+//        extendsFrom configurations.default
+//    }
+//}
+
+/*android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+}*/
+/*
+
+signing {
+    required {
+        has("release") && gradle.taskGraph.hasTask("uploadArchives")
+    }
+    sign configurations.archives
+}
+
+uploadArchives {
+    configuration = configurations.archives
+    repositories.mavenDeployer {
+        beforeDeployment {
+            MavenDeployment deployment -> signing.signPom(deployment)
+        }
+
+        pom.groupId = "com.kbeanie"
+        pom.artifactId = "image-chooser-library"
+        pom.version = version
+
+        repository(url: sonatypeRepo) {
+            authentication(userName: sonatypeUsername,
+                    password: sonatypePassword)
+        }
+
+        pom.project {
+            name 'Image Chooser Library'
+            packaging 'aar'
+            description 'Image Chooser Library for Android Applications'
+            url 'https://github.com/coomar2841/image-chooser-library'
+
+            scm {
+                url scmUrl
+                connection scmUrl
+                developerConnection scmUrl
+            }
+
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+
+            developers {
+                developer {
+                    id 'coomar2841'
+                    name 'Kumar Bibek'
+                    email 'coomar.101@gmail.com'
+                }
+            }
+        }
+    }
+}
+*/
+
+android {
+    /*defaultConfig {
+
+        multiDexEnabled = true
+    }*/
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+ /*   buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+        }
+        release {
+//            keyAlias chooserReleaseKeyAlias
+//            keyPassword chooserReleaseKeyPassword
+//            storeFile file(chooserReleaseStoreFile)
+//            storePassword chooserReleaseStorePassword
+        }
+    }*/
+}
+
+dependencies {
+    //compile fileTree(dir: 'libs', include: ['*.jar'])
+   // compile files('libs/apache-httpcomponents-httpcore.jar')
+  //  compile files('libs/httpclient-4.0.3.jar')
+    compile 'com.android.support:support-v4:23.0.1'
+//    compile 'org.apache.httpcomponents:httpmime:4.3.5'
+}

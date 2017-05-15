@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dialog_background_color"
+        android:splitMotionEvents="false">
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:splitMotionEvents="false">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/icon_avatar_small"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@id/imgAvatar"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginStart="@dimen/left_margin"
+                    android:layout_marginTop="@dimen/smargin"
+                    android:layout_marginBottom="@dimen/smargin"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginStart="@dimen/left_margin"
+                    android:layout_toRightOf="@id/imgAvatar"
+                    android:layout_centerInParent="true"
+                    >
+
+                <TextView
+                    android:id="@id/customerName"
+                    android:text="Amandeep Singh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/customerName"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left|center_vertical"
+                    >
+                    <TextView
+                        app:font="Light"
+                        style="@style/FastVan.Widget.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edtimatedfare"
+                        android:textColor="@color/gray_off"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/smargin"
+                        android:layout_marginStart="@dimen/smargin"
+                        style="@style/FastVan.Widget.TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R 30"
+                        android:lines="1"
+
+                        />
+                </LinearLayout>
+</LinearLayout>
+                <ImageView
+                    android:layout_marginRight="@dimen/right_margin"
+                    android:layout_marginEnd="@dimen/right_margin"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/call_icn"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_margin="@dimen/top_margin"
+
+                style="@style/FastVan.Widget.TextView"
+                android:id="@+id/textMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+
+                android:lineSpacingExtra="5dp"
+                android:maxHeight="400dp"
+
+                android:text="Message"
+
+                android:textSize="@dimen/dialog_textview_textsize" />
+            <RelativeLayout
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_marginEnd="@dimen/right_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginStart="@dimen/left_margin"
+                android:background="@drawable/border_outline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/totalcredits"
+                    android:padding="@dimen/padding"
+                    app:font="Light"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quotedfare"
+                    android:textColor="@color/gray_off"
+
+                    />
+                <TextView
+                    android:layout_margin="@dimen/smargin"
+                    android:lines="1"
+                    android:gravity="right"
+
+              android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/padding"
+                    app:font="SemiBold"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$45"
+android:background="@color/white_off"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@color/white_off"></View>
+
+            <Button
+                style="@style/FastVan.Widget.Button"
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:background="@drawable/transparent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="OK"
+                android:textColor="@drawable/textcolor_selector"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

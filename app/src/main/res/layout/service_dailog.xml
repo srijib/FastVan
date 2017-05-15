@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+
+        android:background="@drawable/dialog_background_color"
+        android:splitMotionEvents="false">
+
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:splitMotionEvents="false"
+
+            >
+            <TextView
+                style="@style/FastVan.Widget.TextView"
+
+                android:id="@+id/textMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:maxHeight="400dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/selectservice"
+
+
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="15dp"
+                android:background="@color/white_off"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginRight="@dimen/left_margin"
+                android:layout_marginEnd="@dimen/left_margin"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+
+                    android:id="@+id/checkboxCourier"
+
+                    android:layout_weight="1"
+                    android:text="@string/courier"
+                    android:layout_gravity="left|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:id="@+id/checkboxDelivery"
+
+                    android:layout_weight="1"
+                    android:text="@string/delivery"
+                    android:layout_gravity="left|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/checkboxRemoval"
+
+                    android:layout_weight="1"
+                    android:text="@string/removal"
+                    android:layout_gravity="left|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:id="@+id/checkboxAllServices"
+
+                    android:layout_weight="1"
+                    android:text="@string/allservices"
+                    android:layout_gravity="left|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="15dp"
+                android:background="@color/white_off"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <Button
+                    style="@style/FastVan.Widget.Button"
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:singleLine="true"
+                    android:text="@string/save"
+                    android:textColor="@drawable/appcolor_selector"
+                   />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white_off">
+
+                </View>
+
+                <Button
+                    style="@style/FastVan.Widget.Button"
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:singleLine="true"
+                    android:text="@string/cancel"
+                    android:textColor="@drawable/textcolor_selector"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

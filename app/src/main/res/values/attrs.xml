@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="Typekit">
+        <attr name="font">
+            <enum name="Black" value="1" />
+            <enum name="Bold" value="2" />
+            <enum name="BoldItalic" value="3" />
+            <enum name="ExtraLight" value="4" />
+            <enum name="ExtraLightItalic" value="5" />
+            <enum name="Italic" value="6" />
+            <enum name="Light" value="7" />
+            <enum name="LightItalic" value="8" />
+            <enum name="Regular" value="9" />
+            <enum name="SemiBold" value="10" />
+            <enum name="SemiBoldItalic" value="11" />
+
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="FloatLabeledEditText">
+        <attr name="fletTextAppearance" format="reference" />
+        <attr name="fletPadding" format="reference|dimension" />
+        <attr name="fletPaddingLeft" format="reference|dimension" />
+        <attr name="fletPaddingTop" format="reference|dimension" />
+        <attr name="fletPaddingRight" format="reference|dimension" />
+        <attr name="fletPaddingBottom" format="reference|dimension" />
+        <attr name="fletBackground" format="reference|color" />
+    </declare-styleable>
+
+
+</resources>

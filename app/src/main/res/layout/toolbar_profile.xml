@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/toolbarwithtitleNlogo"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="@dimen/toolbar_height"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:id="@id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+
+            >
+
+            <ImageButton
+                android:id="@+id/backIcon"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:src="@drawable/back_button_selector"
+
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:src="@drawable/app_logo_selector" />
+        </LinearLayout>
+        <TextView
+            android:id="@id/screenTitle"
+            app:font="Light"
+            style="@style/FastVan.Widget.ToolbarTextView"
+            android:layout_centerInParent="true"
+            android:text="title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<LinearLayout
+    android:id="@+id/editprofileLayout"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="@dimen/smargin"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/toolbar_height"
+    android:gravity="center">
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/smargin"
+            android:layout_marginStart="@dimen/smargin"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+
+            android:id="@+id/buttonUpdateProfile"
+            android:src="@drawable/icon_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="@dimen/right_margin"
+            android:layout_marginEnd="@dimen/right_margin"
+            />
+</LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

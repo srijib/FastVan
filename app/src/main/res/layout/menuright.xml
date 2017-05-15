@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_bgcolor"
+    android:paddingTop="@dimen/status_bar_size"
+    >
+
+    <TextView
+        android:id="@+id/textViewClearNotifications"
+        style="@style/FastVan.Widget.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/toolbar_height"
+        android:text="@string/clearnotifications"
+        android:gravity="center"
+        android:textColor="@drawable/appcolor_selector"/>
+
+    <TextView
+        android:visibility="gone"
+        app:font="Light"
+        android:id="@id/noRecord"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/norecord"
+        style="@style/FastVan.Widget.TextView"
+        android:layout_width="fill_parent"
+        android:textColor="@color/white"
+        android:layout_height="70dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerListRight"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+
+        />
+</LinearLayout>

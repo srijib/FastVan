@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+
+        android:background="@drawable/dialog_background_color"
+        android:splitMotionEvents="false">
+
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:splitMotionEvents="false"
+
+            >
+
+            <TextView
+                android:id="@+id/textMessage"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:maxHeight="400dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/selectvehicle"
+
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="@dimen/top_margin"
+                android:background="@color/white_off"></View>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/left_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginRight="@dimen/left_margin"
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+
+                    android:id="@+id/checkboxBike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="@string/bike" />
+
+                <CheckBox
+
+                    android:id="@+id/checkboxVan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="@string/van" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/left_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginRight="@dimen/left_margin"
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+
+                    android:id="@+id/checkboxOneTon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="@string/oneton" />
+
+                <CheckBox
+
+                    android:id="@+id/checkboxTwoTon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="@string/twoton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/left_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginRight="@dimen/left_margin"
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+
+                    android:id="@+id/checkboxFourTon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="@string/fourton" />
+
+                <CheckBox
+
+                    android:id="@+id/checkboxEightTon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="@string/eightton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/left_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginRight="@dimen/left_margin"
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+
+                    android:id="@+id/checkboxTwelveTon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="@string/twelveton" />
+
+                <CheckBox
+
+                    android:id="@+id/checkboxThirtyTwoTon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:text="@string/thirtytwoton" />
+
+            </LinearLayout>
+            <!--<CheckBox-->
+            <!--android:id="@+id/checkboxFourTon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="left|center"-->
+            <!--android:layout_marginLeft="@dimen/left_margin"-->
+            <!--android:layout_marginStart="@dimen/left_margin"-->
+            <!--android:layout_marginTop="@dimen/top_margin"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/fourton" />-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="15dp"
+                android:background="@color/white_off" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <Button
+                    android:id="@+id/btnOk"
+                    style="@style/FastVan.Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:singleLine="true"
+                    android:text="@string/save"
+                    android:textColor="@drawable/appcolor_selector" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white_off">
+
+                </View>
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/FastVan.Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent"
+                    android:singleLine="true"
+                    android:text="@string/cancel"
+                    android:textColor="@drawable/textcolor_selector" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

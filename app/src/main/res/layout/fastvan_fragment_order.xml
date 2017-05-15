@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rlLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_off"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/deliverylocation"
+            style="@style/FastVan.Widget.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginStart="@dimen/left_margin"
+            android:text="@string/pickuplocation"
+            app:font="SemiBold" />
+
+        <RelativeLayout
+            android:id="@id/layoutAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deliverylocation"
+
+            android:paddingBottom="@dimen/padding">
+
+            <ImageView
+                android:id="@id/locationicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/left_margin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginRight="@dimen/left_margin"
+
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginTop="@dimen/left_margin"
+                android:src="@drawable/location_icn" />
+
+            <TextView
+                android:id="@id/pickuplocation"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_toEndOf="@id/locationicon"
+                android:layout_toLeftOf="@id/viewDetails"
+
+                android:layout_toRightOf="@id/locationicon"
+                android:layout_toStartOf="@id/viewDetails"
+                app:font="Light" />
+
+            <TextView
+                android:id="@id/viewDetails"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginEnd="@dimen/right_margin"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="@string/viewdetails"
+                android:textColor="@drawable/appcolor_selector"
+                app:font="Light" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/orderToday"
+        android:layout_below="@+id/rlLocation" />
+
+    <LinearLayout
+        android:id="@+id/orderToday"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_off"
+            android:padding="@dimen/spadding">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service"
+                    android:textColor="@color/white_off"
+                    app:font="Light" />
+
+                <TextView
+                    android:id="@id/servicetype"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/smargin"
+                    android:layout_marginStart="@dimen/smargin"
+                    android:textColor="@color/white"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/parcelDetails"
+                style="@style/FastVan.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/right_margin"
+                android:layout_marginRight="@dimen/right_margin"
+                android:drawableLeft="@drawable/icon_parcel_details"
+                android:drawablePadding="10dp"
+                android:text="Parcel Details"
+                android:textColor="@drawable/appcolor_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/smargin"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginStart="@dimen/left_margin"
+                android:layout_marginTop="@dimen/smargin"
+                android:src="@drawable/icon_avatar_small" />
+
+            <TextView
+                android:id="@id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginStart="@dimen/left_margin"
+
+                android:layout_toRightOf="@+id/imgAvatar"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@id/makeCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/right_margin"
+                android:layout_marginRight="@dimen/right_margin"
+                android:src="@drawable/call_selector" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+
+            android:id="@id/submit"
+            style="@style/FastVan.Widget.Button"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/smargin"
+            android:text="@string/accept"
+            app:font="Light" />
+    </LinearLayout>
+
+
+</RelativeLayout>

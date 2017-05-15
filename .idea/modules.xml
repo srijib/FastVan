@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FastVan.iml" filepath="$PROJECT_DIR$/FastVan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/floatlabelededittextlib/floatlabelededittextlib.iml" filepath="$PROJECT_DIR$/floatlabelededittextlib/floatlabelededittextlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/image-chooser-library/image-chooser-library.iml" filepath="$PROJECT_DIR$/image-chooser-library/image-chooser-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewindicator/viewindicator.iml" filepath="$PROJECT_DIR$/viewindicator/viewindicator.iml" />
+    </modules>
+  </component>
+</project>

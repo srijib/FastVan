@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#DA5700</color>
+    <color name="color_Primary">#FF6600</color>
+    <color name="color_PrimaryDark">#DA5700</color>
+    <color name="color_Accent">#FF6600</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="textColor">#3E3936</color>
+    <color name="button_strokecolor">#FD6800</color>
+    <color name="button_hovercolor">#FD6800</color>
+    <color name="button_gradient_normal">#fff</color>
+    <color name="menu_bgcolor">#3E3936</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="white_off">#dcdcdc</color>
+    <color name="gray_off">#A1A1A1</color>
+    <color name="edttext_hint_color">#A3A3A3</color>
+    <color name="step_in_text_color">#0ebab4</color>
+    <color name="divided_color">#6C6C6C</color>
+    <color name="light_grey">#9b9b9b</color>
+    <color name="dilaog_background_color">#ffffff</color>
+    <color name="dilaog_text_color">#6e6e6e</color>
+    <color name="black">#000000</color>
+    <color name="appColor">#FD6800</color>
+</resources>

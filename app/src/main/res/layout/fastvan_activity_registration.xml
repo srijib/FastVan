@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <include layout="@layout/toolbar_with_title"></include>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbarwithtitleNlogo">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/left_margin"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/left_margin"
+            android:layout_marginStart="@dimen/left_margin"
+            android:orientation="vertical"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/bottom_margin"
+
+
+                android:layout_marginTop="@dimen/top_margin" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/business" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/individual" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@id/firstname"
+                        style="@style/FastVan.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz .-'"
+                        android:hint="@string/firstname"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName|textCapSentences|textNoSuggestions"
+                        app:font="Regular" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@id/lastname"
+                        style="@style/FastVan.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:hint="@string/lastname"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName|textCapSentences|textNoSuggestions"
+                        app:font="Regular" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            </LinearLayout>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin">
+
+                <EditText
+                    android:id="@id/emailaddress"
+                    style="@style/FastVan.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="@string/emailaddress"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    app:font="Regular" />
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin">
+
+                <EditText
+
+                    android:id="@id/mobilenumber"
+                    style="@style/FastVan.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="@string/mobilenumber"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone|textFilter|textNoSuggestions"
+                    android:maxLength="10"
+
+                    app:font="Regular" />
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin">
+
+                <EditText
+                    android:id="@id/companyname"
+                    style="@style/FastVan.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:editable="false"
+                    android:hint="@string/companyname"
+                    android:inputType="none"
+                    app:font="Regular" />
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin">
+
+                    <EditText
+                        android:id="@id/servicetype"
+                        style="@style/FastVan.Widget.EditText"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:editable="false"
+                        android:hint="@string/servicetype"
+                        android:inputType="none"
+                        app:font="Regular" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="top|end"
+                    android:lines="2"
+                    android:text="@string/servicehint"
+                    android:textColor="@color/gray_off"
+                    android:textSize="12sp"
+                    app:font="Light" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin">
+
+                    <EditText
+
+                        android:id="@id/vehicaltype"
+
+
+                        style="@style/FastVan.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="@string/vehicaltype"
+                        android:inputType="none" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="top|end"
+                    android:lines="2"
+                    android:text="@string/vehiclehint"
+                    android:textColor="@color/gray_off"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:font="Light" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin">
+
+                    <EditText
+                        android:id="@id/trucktype"
+                        style="@style/FastVan.Widget.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+
+                        android:editable="false"
+                        android:hint="@string/trucktype"
+                        android:inputType="none"
+                        app:font="Regular" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="top|end"
+                    android:lines="2"
+                    android:text="@string/truckhint"
+                    android:textColor="@color/gray_off"
+                    android:textSize="12sp"
+                    app:font="Light" />
+            </RelativeLayout>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin">
+
+                <EditText
+                    android:id="@id/vehicalnumber"
+                    style="@style/FastVan.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz"
+                    android:hint="@string/vehicalno"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textNoSuggestions|textCapCharacters"
+                    android:maxLength="10" />
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin">
+
+                <EditText
+                    android:id="@id/password"
+                    style="@style/FastVan.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="@string/password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    app:font="Regular" />
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin">
+
+                <EditText
+                    android:id="@id/confirmpassword"
+                    style="@style/FastVan.Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirmpassword"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="10" />
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textSize="@dimen/small_textSize"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textviewTermsAndConditions"
+                    style="@style/FastVan.Widget.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center|left"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    android:gravity="center|left"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/agree"
+                    android:textColor="@color/gray_off"
+                    android:textSize="@dimen/small_textSize"
+                    app:font="Light" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+
+                android:id="@id/signup"
+                style="@style/FastVan.Widget.Button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_weight="1"
+                android:text="@string/signup"
+                app:font="Light" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alreadyhaveaccount"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp"
+                    app:font="Light" />
+
+                <TextView
+                    android:id="@id/signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Sign In"
+                    android:textColor="@drawable/appcolor_selector"
+                    android:textSize="17sp"
+                    app:font="Light" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

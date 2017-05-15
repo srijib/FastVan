@@ -1,0 +1,296 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/topRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_size"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/status_bar_size">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Select Location"
+            android:textColor="@color/white"
+            android:textSize="17sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/crossBtn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/nav_cross_btn_selector" />
+
+        <Button
+            android:id="@+id/tickBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/nav_cross_btn_selector" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/searchRl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/topRl">
+
+        <EditText
+            android:id="@+id/locationEditText"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/button2"
+            android:layout_toLeftOf="@+id/currentLocation"
+            android:layout_toRightOf="@+id/button2"
+            android:background="@android:color/transparent"
+            android:hint="Enter location"
+
+            android:inputType="textNoSuggestions"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_off"
+            android:textSize="17sp">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/location_icn" />
+
+        <Button
+            android:id="@+id/currentLocation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/location_van_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchRl">
+
+
+        <fragment
+
+            android:id="@+id/map"
+            class="com.fast.van.utils.map.TouchableMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/centreLocationRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="307dp"
+                    android:layout_height="65dp"
+                    android:layout_above="@+id/centrePin"
+                    android:background="#0ff">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                     >
+
+                        <View
+
+                            android:layout_width="30dp"
+                            android:layout_height="44dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+
+                            android:background="@drawable/location_icn"></View>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/relativeLayout"
+                        android:layout_toRightOf="@+id/relativeLayout"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:text="Loading... "
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- android:layout_marginTop="330px" -->
+
+                <ImageView
+                    android:id="@+id/centrePin"
+                    android:layout_width="18dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/icon_location_pin" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+
+                <RelativeLayout
+                    android:layout_width="307dp"
+                    android:layout_height="65dp"
+                    android:layout_above="@+id/centrePin"
+                    android:background="#00F">
+
+                    <RelativeLayout
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:background="#FF0">
+
+                        <View
+
+                            android:layout_width="27dp"
+                            android:layout_height="39dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:background="@drawable/icon_location_pin"></View>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:text="Loading... "
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- android:layout_marginTop="330px" -->
+
+                <ImageView
+
+                    android:layout_width="18dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+
+                    android:background="@drawable/icon_location_pin"
+                    android:tag="mwar" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="#F00"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_alignParentBottom="true"
+            android:text="This gives us a rough idea of your location, we will contact you for exact location prior to delivery."
+             />
+
+
+        <RelativeLayout
+            android:id="@+id/locationNotFoundRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".8"
+            android:background="@color/black"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="225dp"
+                android:text="LOCATION NOT FOUND"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_btn_textsize" />
+
+            <TextView
+                android:id="@+id/locationText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/locationText"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="You can search your location by tap on address bar."
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_btn_textsize" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
